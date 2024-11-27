@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matriz de Leontief</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js"></script> <!-- Biblioteca math.js -->
+</head>
+<body>
+  <div class="container">
+    <h1>Matriz de Leontief Interativa</h1>
+    <div id="inputs">
+      <h2>Insira os Dados:</h2>
+      <p>Nomes dos setores (separados por vírgula):</p>
+      <input type="text" id="nomesSetores" placeholder="Ex.: Logística, Varejo, Encomendas">
+      <p>Quantidade de setores: <input type="number" id="setores" min="2" max="10" value="3"></p>
+      <button id="criarMatriz">Criar Matriz</button>
+      <div id="matrizInput"></div>
+      <button id="calcular" style="display: none;">Calcular</button>
+    </div>
+    <div id="output" style="display: none;">
+      <h2>Resultados</h2>
+      <div id="resultadoMatriz"></div>
+      <div id="demandaTotal"></div>
+      <div id="observacao" style="margin-top: 20px;">
+        <h3>Observação:</h3>
+        <p id="textoObservacao"></p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Desenvolvido por Eric Vieira</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
