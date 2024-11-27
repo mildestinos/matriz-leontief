@@ -1,0 +1,87 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+#inputs, #output {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input {
+  padding: 5px;
+  margin: 10px 0;
+  width: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+#observacao {
+  padding: 10px;
+  background-color: #f0f8ff;
+  border: 1px solid #d1e7ff;
+  border-radius: 5px;
+}
+
+/* Estilo do Rodapé */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  color: #555;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin: 0;
+}
