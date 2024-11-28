@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajuda - Matriz de Leontief</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Ajuda: Entendendo a Matriz de Leontief</h1>
+
+    <h2>Introdução</h2>
+    <p>
+      A Matriz de Leontief é uma poderosa ferramenta econômica que descreve como diferentes setores da economia estão interconectados.
+      Ela ajuda a modelar as interdependências entre os setores e a calcular o impacto de mudanças na demanda final. Cada elemento
+      da matriz técnica \(A\) representa a fração da produção de um setor que é usada como insumo por outro setor.
+    </p>
+
+    <h2>Tabela Explicativa: Matriz Técnica \(A\)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Elemento</th>
+          <th>Origem</th>
+          <th>Descrição</th>
+          <th>Exemplo Prático</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>a[1,1]</td>
+          <td>Comércio → Comércio</td>
+          <td>Fração da produção do comércio usada pelo próprio setor comércio.</td>
+          <td>Lojas compram produtos de outras lojas para revenda (ex.: atacado para varejo).</td>
+        </tr>
+        <tr>
+          <td>a[1,2]</td>
+          <td>Logística → Comércio</td>
+          <td>Fração da produção do setor logística usada pelo comércio.</td>
+          <td>Transporte e armazenamento usados pelo comércio para entregar mercadorias.</td>
+        </tr>
+        <tr>
+          <td>a[1,3]</td>
+          <td>Agricultura → Comércio</td>
+          <td>Fração da produção do setor agricultura usada pelo comércio.</td>
+          <td>Produtos agrícolas vendidos em supermercados ou feiras (ex.: frutas, verduras).</td>
+        </tr>
+        <tr>
+          <td>a[2,1]</td>
+          <td>Comércio → Logística</td>
+          <td>Fração da produção do setor comércio usada pelo setor logística.</td>
+          <td>Compra de veículos ou equipamentos pelo setor logístico para realizar transporte.</td>
+        </tr>
+        <tr>
+          <td>a[2,2]</td>
+          <td>Logística → Logística</td>
+          <td>Fração da produção do setor logística usada pelo próprio setor logística.</td>
+          <td>Combustível ou manutenção dos veículos usados pela logística.</td>
+        </tr>
+        <tr>
+          <td>a[2,3]</td>
+          <td>Agricultura → Logística</td>
+          <td>Fração da produção do setor agricultura usada pelo setor logística.</td>
+          <td>Transporte de produtos agrícolas para centros de distribuição ou consumidores.</td>
+        </tr>
+        <tr>
+          <td>a[3,1]</td>
+          <td>Comércio → Agricultura</td>
+          <td>Fração da produção do setor comércio usada pelo setor agricultura.</td>
+          <td>Compra de equipamentos agrícolas ou insumos químicos em lojas especializadas.</td>
+        </tr>
+        <tr>
+          <td>a[3,2]</td>
+          <td>Logística → Agricultura</td>
+          <td>Fração da produção do setor logística usada pelo setor agricultura.</td>
+          <td>Transporte de insumos, como fertilizantes e máquinas agrícolas, até as fazendas.</td>
+        </tr>
+        <tr>
+          <td>a[3,3]</td>
+          <td>Agricultura → Agricultura</td>
+          <td>Fração da produção do setor agricultura usada pelo próprio setor agricultura.</td>
+          <td>Produção de sementes e mudas usadas em novas plantações.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Descrição Geral</h2>
+    <p>
+      - \(a[i,j]\): Representa a fração da produção do setor \(j\) que é usada pelo setor \(i\).<br>
+      - O valor de cada elemento varia entre \(0\) e \(1\). Por exemplo:
+        - \(a[2,1] = 0.3\): 30% da produção do comércio é usada como insumo para a logística.
+    </p>
+
+    <h2>Exemplo Completo</h2>
+    <p>
+      Imagine que a logística depende de 20% da produção do comércio (\(a[2,1] = 0.2\)). Isso pode significar que empresas de transporte
+      compram veículos, peças ou outros materiais diretamente do setor de comércio para operar. Esse tipo de análise permite calcular
+      os efeitos de mudanças em um setor em toda a economia.
+    </p>
+
+    <h2>Fontes de Pesquisa</h2>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Input%E2%80%93output_model" target="_blank">Wikipedia: Input-Output Model</a></li>
+      <li><a href="https://www.sciencedirect.com/topics/economics-econometrics-and-finance/input-output-analysis" target="_blank">ScienceDirect: Input-Output Analysis</a></li>
+      <li><a href="https://www.ibge.gov.br/" target="_blank">IBGE: Estudos Econômicos</a></li>
+    </ul>
+
+    <a href="index.html" class="button">Voltar</a>
+  </div>
+</body>
+</html>
