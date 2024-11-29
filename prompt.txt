@@ -1,0 +1,94 @@
+
+### **Prompt Completo para Criar Ferramenta de Análise da Matriz de Leontief**
+
+#### **Descrição do Projeto**
+"Quero criar uma ferramenta interativa que simule e analise a Matriz de Leontief, permitindo que os usuários insiram dados econômicos e obtenham resultados sobre a interdependência entre setores econômicos. A ferramenta deve ser desenvolvida usando HTML, CSS e JavaScript e incluir as seguintes funcionalidades:"
+
+---
+
+#### **1. Estrutura do Projeto**
+**HTML:**
+- Criar uma interface onde os usuários possam:
+  - Inserir os nomes dos setores (separados por vírgulas).
+  - Definir a quantidade de setores econômicos.
+  - Preencher a matriz técnica (\(A\)) e a demanda final (\(Y\)).
+- Exibir os resultados:
+  - A matriz inversa \((I - A)^{-1}\).
+  - O vetor de produção total (\(X\)).
+  - Uma observação interpretando os resultados.
+
+**CSS:**
+- Um design limpo, com botões, tabelas e campos de entrada organizados.
+- Diferenciar claramente as áreas de entrada de dados e resultados.
+
+**JavaScript:**
+- Lógica para:
+  1. Capturar e validar entradas do usuário.
+  2. Construir a matriz técnica (\(A\)) e calcular \((I - A)\) e sua inversa.
+  3. Multiplicar \((I - A)^{-1}\) pelo vetor de demanda final (\(Y\)) para obter \(X\).
+  4. Gerar observações automáticas explicando os resultados.
+
+---
+
+#### **2. Funcionalidades Extras**
+- **Validação de Dados:** Garantir que os coeficientes técnicos (\(A\)) sejam números positivos e menores que 1, e que o número de demandas coincida com o número de setores.
+- **Simulação de Impactos:** Adicionar campos para ajustar a demanda final e observar os impactos na produção total.
+- **Gráficos Interativos:** Usar bibliotecas como Chart.js para exibir os resultados em gráficos de barras ou diagramas.
+
+---
+
+#### **3. Dependências**
+- Biblioteca `math.js` para cálculos matriciais.
+- Links para incluir:
+  ```html
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js"></script>
+  ```
+
+---
+
+#### **4. Estrutura do Código**
+**HTML:**
+- Contendo campos de entrada para:
+  - Nomes dos setores.
+  - Quantidade de setores.
+  - Coeficientes técnicos (\(A\)).
+  - Vetor de demanda final (\(Y\)).
+
+**CSS:**
+- Incluindo estilos para:
+  - Tabelas de entrada de dados.
+  - Botões com hover.
+  - Destaque para a área de resultados.
+
+**JavaScript:**
+1. Gerar uma tabela dinâmica com base no número de setores.
+2. Capturar valores e realizar cálculos matriciais:
+   - \((I - A)\)
+   - \((I - A)^{-1}\)
+   - \(X = (I - A)^{-1} \cdot Y\)
+3. Exibir resultados em tabelas e gráficos.
+4. Gerar uma observação textual explicando os resultados.
+
+---
+
+#### **5. Exemplos de Teste**
+- Para 3 setores:
+  - **Nomes dos setores:** Agricultura, Indústria, Serviços
+  - **Matriz Técnica (\(A\)):**
+    ```
+    0.2, 0.1, 0.3
+    0.4, 0.3, 0.2
+    0.1, 0.2, 0.5
+    ```
+  - **Demanda Final (\(Y\)):** 100, 180, 200
+  - **Resultados Esperados:**
+    - Matriz \((I - A)^{-1}\)
+    - Vetor de produção total (\(X\))
+    - Observação: "A produção total necessária para atender à demanda final é maior devido ao consumo intermediário entre os setores."
+
+---
+
+#### **6. Orientações para Melhorias**
+"Peço que o código seja modular e bem comentado, permitindo futuras expansões, como incluir mais setores, análises regionais ou simulações econômicas."
+
+-
