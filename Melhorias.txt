@@ -1,0 +1,39 @@
+
+
+### **1. Introdução de Indicadores Econômicos Avançados**
+Incorporar indicadores econômicos, como:
+- **Multiplicadores econômicos:** Indique o impacto total na economia de um aumento na demanda de um setor específico.
+- **Índices de ligação para frente e para trás:** Avalie quais setores têm maior influência na economia local.
+- **Distribuição do valor adicionado:** Mostre como diferentes setores contribuem para o PIB, remuneração de trabalho e lucros.
+
+### **2. Análises de Impacto Personalizadas**
+Adicionar um módulo para simulações econômicas, como:
+- **Simulação de choques de demanda:** Permita aos usuários alterar a demanda final e calcular o impacto sobre produção, emprego e impostos.
+- **Impacto de barreiras comerciais:** Analise restrições comerciais e impactos nos setores exportadores, como no caso citado das exportações de carnes.
+
+---
+
+### **3. Dados Regionais Detalhados**
+Incorporar tabelas mais detalhadas, como:
+- **Tabelas de Recursos e Usos (TRU):** Discriminar produção nacional, importações e margens.
+- **Segmentação por setores locais:** Expandir o número de setores ou atividades para refletir as especificidades regionais, como na MIP-SC.
+
+---
+
+### **4. Inclusão de Modelos Fechados**
+Atualmente, o modelo é aberto. Você pode incluir:
+- **Modelo Fechado:** Integre o impacto de salários e consumo das famílias no sistema, como descrito no documento.
+
+---
+
+### **5. Melhorias no Sistema de Entrada**
+- **Validação de Dados:** Adicione verificações para garantir a consistência dos coeficientes técnicos e demanda final.
+- **Ferramenta de Importação de Dados:** Permita a importação de tabelas diretamente do Excel ou CSV.
+
+---
+
+### **6. Visualizações Gráficas**
+Inclua gráficos interativos para:
+- Mostrar interdependências entre setores.
+- Visualizar impactos regionais.
+- Comparar produção total antes e depois de simulações.
